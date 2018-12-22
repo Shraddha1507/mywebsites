@@ -1,0 +1,67 @@
+.drop_menu {
+	background:#134158;
+	padding:0;
+	margin:0;
+	
+	list-style-type:none;
+	height:30px;
+
+}
+.drop_menu li { float:left;
+               height:35px;
+               border-right: 1px solid #567989;}
+.drop_menu li a {
+	padding:10.5px 20px;
+	display:block;
+	color:#f3f1ec;
+	text-decoration:none;
+	font:12px arial, verdana, sans-serif;
+	 font-weight:bold;   
+	
+}
+
+
+
+/* Submenu */
+.drop_menu ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	list-style-type:none;
+}
+.drop_menu li:hover { position:relative; background:#f0b852; 
+
+    -webkit-transition: background 0.4s;
+    -moz-transition:    background 0.4s;
+    -ms-transition:     background 0.4s;
+    -o-transition:      background 0.4s;
+    transition:         background 0.4s;                    
+                      }
+.drop_menu li:hover ul {
+	left:0px;
+	top:30px;
+	background:#5FD367;
+	padding:0px;
+}
+a {
+    color: lime;
+    -webkit-transition: color 0.4s;
+    -moz-transition:    color 0.4s;
+    -ms-transition:     color 0.4s;
+    -o-transition:      color 0.4s;
+    transition:         color 0.4s;
+}
+
+
+.drop_menu li:hover ul li a {
+	padding:5px;
+	display:block;
+	width:168px;
+	text-indent:15px;
+	background-color:#5FD367;
+}
+.drop_menu li:hover ul li a:hover { background:#c9e3ee; }
+.drop_menu a:hover
+{color:#134158;
+ font-weight:bold;  
+  }
